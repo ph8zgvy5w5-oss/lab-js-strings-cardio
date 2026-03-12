@@ -7,6 +7,11 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
+const searchLetter = "jello";
+const indexOfFirst = string1.indexOf(searchLetter);
+
+console.log(`The index of the first "${searchLetter}" is ${indexOfFirst}`);
+
 
 
 
@@ -20,7 +25,11 @@ const string2 = "ABCDEFGHJKLO";
 // Your code here...
 
 
+console.log((string2.indexOf('C')))
+console.log((string2.indexOf('O')))
+console.log((string2.indexOf('L')))
 
+console.log(string2[2],string2[11],string2[11],string2[10])
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
@@ -31,7 +40,7 @@ const string3 = "Na";
 
 // Your code here...
 
-
+console.log(string3.repeat(4), "Batman!")
 
 
 /*******************************************
@@ -43,9 +52,15 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
+console.log(fruit.indexOf ("watermelon"))
+console.log(fruit.indexOf ('watermelon', 37))
 
+const myFavoriteFruit = fruit.slice(start, start + 10)
 
-/***************************************************
+console.log(myFavoriteFruit)
+
+/****************************
+ * ***********************
     Iteration 5 | Check If Strings Include a Word
 ***************************************************/
 // Using the string method .include(), check if the below strings with funny newspaper headlines include the word "oxygen".
