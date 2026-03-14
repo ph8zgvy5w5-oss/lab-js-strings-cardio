@@ -52,12 +52,10 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
-console.log(fruit.indexOf ("watermelon"))
-console.log(fruit.indexOf ('watermelon', 37))
+const favoriteFruitIndex = fruit.indexOf("water")
+const favoriteFruit = fruit.slice(favoriteFruitIndex, favoriteFruitIndex + 10)
 
-const myFavoriteFruit = fruit.slice(start, start + 10)
-
-console.log(myFavoriteFruit)
+console.log(favoriteFruit)
 
 /****************************
  * ***********************
@@ -74,10 +72,18 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Check the first headline
 // Your code here ...
 
+if(funnyHeadline1.includes('oxygen')) {
+    console.log("The strinf includes the word 'oxygen'")
+}
 
 // Check the second headline
 // Your code here ...
 
+if(funnyHeadline2.includes('oxygen')) {
+    console.log("The strinf includes the word 'oxygen'") }
+        else {
+        console.log("no oxygen")
+    }
 
 
 /*******************************************
@@ -91,6 +97,9 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 // a) Print the string length
 // Your code here ...
 
+console.log(string4.length)
 
 // b) Print the last character in the string
 // Your code here ...
+
+console.log(string4[string4.length - 1])
